@@ -13,6 +13,10 @@ w/ [Tejas Ramesh](https://tejas3070.github.io/) and [Keren Zhou](https://www.jok
 
 The `main` branch starts from the upstream unsolved puzzles. Earlier answers are preserved on the [`deprecated` branch](https://github.com/jihandong/Triton-Puzzles/tree/deprecated).
 
+### Run the local notebook on a Colab runtime from VS Code
+
+Install the official [Google Colab VS Code extension](https://marketplace.visualstudio.com/items?itemName=google.colab) (and the Jupyter extension if VS Code prompts for it). Open `Triton-Puzzles.ipynb` in VS Code, click **Select Kernel** in the upper right, then choose **Colab > New Colab Server** and select a GPU such as T4. Use **Auto Connect** if a CPU runtime is enough. During the browser sign-in flow, choose the Google account associated with `hj2868`; then return to VS Code and select the Colab kernel. Run the notebook's installation and setup cells before Puzzle 1. Your notebook edits stay in the local Git checkout and can be committed and pushed normally. See the extension's [user guide](https://github.com/googlecolab/colab-vscode/wiki/User-Guide) for server selection and account sign-in.
+
 
 Programming for accelerators such as GPUs is critical for modern AI systems.
 This often means programming directly in proprietary low-level languages such as CUDA. [Triton](https://github.com/openai/triton/) is an alternative open-source language that allows you to code at a higher-level and compile to accelerators like GPU.
